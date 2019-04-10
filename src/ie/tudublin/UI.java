@@ -21,7 +21,7 @@ public class UI extends PApplet
 	public void settings()
 	{
 		size(500, 800);
-		loadColour();
+
 		separate(381);
 		separate(1);
 		separate(92);	
@@ -29,7 +29,8 @@ public class UI extends PApplet
 
 	public void setup() 
 	{
-
+		loadColour();
+		printColour();
 	}
 
 	public void loadColour()
@@ -42,9 +43,19 @@ public class UI extends PApplet
 			colours.add(colour);
 		}
 	}
+
+	public void printColour()
+	{
+		for(Colour colour:colours)
+		{
+			System.out.println(colour);
+		}
+	}
 	
 	public void draw()
 	{			
 
 	}
+
+	private ArrayList<Colour> colours = new ArrayList<Colour>(); // Array list colours declare
 }
