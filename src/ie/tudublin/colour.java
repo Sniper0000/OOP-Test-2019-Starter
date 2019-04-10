@@ -56,8 +56,9 @@ public class Colour
     /**
      * @return the b
      */
-    public int getB() {
-        return B;
+    public int getB() 
+    {
+        return b;
     }
 
     /**
@@ -67,12 +68,12 @@ public class Colour
         this.b = b;
     }
 
-    public string toString()
+    public String toString()
     {
         return colour + "\t" + r + "\t" + g + "\t" + b + "\t" + value;
     }
 
-    public colour(TableRow Row)
+    public Colour(TableRow row)
     {
         colour = row.getString("colour");
         r = row.getInt("r");
